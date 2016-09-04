@@ -10,6 +10,10 @@
            fetch="git://github.com"
            revision="px-0.1" />
 
+  <remote  name="aagallag"
+           fetch="git://github.com"
+           revision="px-0.1" />
+
   <remote  name="github"
            fetch="https://github.com"
            review="review.cyanogenmod.org" />
@@ -26,7 +30,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="aopp/android_platform" remote="aopp" />
+  <project path="android" name="aagallag/android_platform" remote="aagallag" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
@@ -590,7 +594,14 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/cm" name="aopp/android_vendor_cm" remote="aopp" />
+  <project path="vendor/cm" name="aagallag/android_vendor_cm" remote="aagallag" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
   <project path="vendor/pwnieexpress" name="aopp/android_vendor_px" remote="aopp" />
+
+  <project path="kernel/htc/msm8974" name="aagallag/android_kernel_htc_msm8974" remote="aagallag" />
+  <project path="device/htc/m8" name="aagallag/android_device_htc_m8" remote="aagallag" />
+  <project path="device/htc/m8-common" name="aagallag/android_device_htc_m8-common" remote="aagallag" />
+  <project path="device/htc/msm8974-common" name="aagallag/android_device_htc_msm8974-common" remote="aagallag" />
+
+
 </manifest>
