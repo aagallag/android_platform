@@ -5,6 +5,24 @@ Android Open Pwn Project
 
 Please refer to the [Downloading and Building Requirements](https://source.android.com/source/requirements.html) before proceeding.
 
+Install additional dependencies:
+
+    sudo apt-get install schedtool bc
+
+For HTC M8, install lz4:
+
+	git clone https://github.com/Cyan4973/lz4.git
+	cd lz4/
+	make
+	sudo make install
+
+Ensure that OpenJDK 7 is configured as the default Java version:
+
+    sudo update-alternatives --config java
+    sudo update-alternatives --config javac
+
+Read the CyanogenMod wiki entry: [Extract proprietary blobs](https://wiki.cyanogenmod.org/w/Build_for_m8#Extract_proprietary_blobs).  Your rom will not boot if the proprietary blobs are not properly extracted before starting the build process.
+
 ## Downloading the Source
 
 Please refer to [Downloading the Source](https://source.android.com/source/downloading.html) before proceeding.
