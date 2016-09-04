@@ -11,7 +11,7 @@ Please refer to [Downloading the Source](https://source.android.com/source/downl
 
 To initialize a local repository using this source tree, use the command:
 
-    repo init -u git@github.com:aopp/android_platform.git -b px-0.1
+    repo init -u git@github.com:aagallag/android_platform.git -b px-0.1
 
 Then to sync the repository, use:
 
